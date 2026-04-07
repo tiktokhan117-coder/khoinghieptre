@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sông Cầu Coffee - Menu Online</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #d35400;
+            --secondary-color: #2c3e50;
+            --bg-color: #fdfcf0;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            color: var(--secondary-color);
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -30px auto 50px;
+            padding: 0 15px;
+        }
+
+        .category-section {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-info b {
+            display: block;
+            font-size: 1.1em;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e67e22;
+            font-size: 1.1em;
+        }
+
+        .topping-note {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: var(--secondary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SÔNG CẦU COFFEE</h1>
+    <p><i class="fas fa-clock"></i> Mở cửa: 7h - 22h | <i class="fas fa-map-marker-alt"></i> Sông Cầu, Phú Yên</p>
+</header>
+
+<div class="container">
+    <div class="category-section">
+        <h2><i class="fas fa-glass-whiskey"></i> TRÀ SỮA & TOPPING</h2>
+        <div class="menu-item">
+            <div class="item-info"><b>Trà Sữa Truyền Thống</b></div>
+            <div class="price">45k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Trà Sữa Trân Châu Hoàng Kim</b></div>
+            <div class="price">48k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Trà Sữa Thái Xanh/Đỏ</b></div>
+            <div class="price">45k</div>
+        </div>
+        <p class="topping-note">Topping: Trân châu (5k), Kem Cheese (8k)</p>
+    </div>
+
+    <div class="category-section">
+        <h2><i class="fas fa-coffee"></i> CÀ PHÊ VIỆT</h2>
+        <div class="menu-item">
+            <div class="item-info"><b>Cà Phê Đen Đá</b></div>
+            <div class="price">30k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Cà Phê Sữa Đá</b></div>
+            <div class="price">35k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Bạc Xỉu</b></div>
+            <div class="price">38k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Cà Phê Muối</b></div>
+            <div class="price">42k</div>
+        </div>
+    </div>
+
+    <div class="category-section">
+        <h2><i class="fas fa-leaf"></i> TRÀ TRÁI CÂY TƯƠI</h2>
+        <div class="menu-item">
+            <div class="item-info"><b>Trà Ổi Hồng</b></div>
+            <div class="price">52k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Trà Đào Cam Sả</b></div>
+            <div class="price">55k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Trà Vải Lài</b></div>
+            <div class="price">50k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Trà Dâu Tây Mint</b></div>
+            <div class="price">53k</div>
+        </div>
+    </div>
+
+    <div class="category-section">
+        <h2><i class="fas fa-blender"></i> ĐỒ UỐNG ĐÁ XAY</h2>
+        <div class="menu-item">
+            <div class="item-info"><b>Cacao Đá Xay</b></div>
+            <div class="price">55k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Matcha Đá Xay</b></div>
+            <div class="price">58k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Việt Quất Đá Xay</b></div>
+            <div class="price">55k</div>
+        </div>
+    </div>
+
+    <div class="category-section">
+        <h2><i class="fas fa-apple-alt"></i> NƯỚC ÉP & SINH TỐ</h2>
+        <div class="menu-item">
+            <div class="item-info"><b>Nước Ép Dứa/Dưa Hấu</b></div>
+            <div class="price">45k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Nước Ép Chanh Leo</b></div>
+            <div class="price">40k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Sinh Tố Bơ</b></div>
+            <div class="price">60k</div>
+        </div>
+        <div class="menu-item">
+            <div class="item-info"><b>Sinh Tố Xoài</b></div>
+            <div class="price">55k</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Follow us @SongCauCoffee</p>
+    <p style="font-size: 0.8em; opacity: 0.7;">Thiết kế bởi Gemini</p>
+</footer>
+
+</body>
+</html>
